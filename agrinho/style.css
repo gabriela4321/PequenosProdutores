@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+    margin: 3px;
+
+}
+
+header, nav, main, aside, footer {
+	background: #f8e9bf;
+	display: flex;
+	margin: 3px;
+}
+
+header {
+	height: 100px;
+	flex: 1 1 100vw;
+}
+
+header #logo {
+	display: flex;
+	flex: 0 1 200px;
+	background: #075219;
+	justify-content: center;
+	align-items: center;
+}
+
+nav {
+	justify-content: flex-end;
+	align-items: center;
+	flex: 1 1 200px;
+    color: #144d09;
+}
+
+nav a {
+	margin: 0 3%;
+	font-size: 15pt;
+}
+
+main {
+	height: calc(400vh - 896px);
+	flex: 20 1 500px;
+}
+
+aside {
+	flex: 1 1 200px;
+}
+
+footer {
+	height: 100px;
+	flex: 1 1 100vw;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+@media only screen and (max-width: 717px) {
+
+	nav {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background: rgb(12, 83, 18);
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		display: none;
+		opacity: 0;
+		transition: 0.3s;
+	}
+
+	nav a {
+		margin: 3%;
+	}
+
+	main {
+		height: calc(100vh - 330px);
+	}
+
+	aside {
+		height: 100px;
+	}
+}
+
+.texto {
+    text-align: center;
+    margin: 1cm;
+}
+
+h1{
+    color: rgb(18, 124, 27);
+    font-size: 4cap;
+    margin: 3mm;
+}
+
+h2{
+    color:  darkgoldenrod;
+    font-size: 3cap;
+    margin: 1cm;
+}
+
+h3{
+    color:  rgb(9, 82, 31);
+ 
+
+}
+
+p {
+    color:  darkgoldenrod;
+    font-size: 2cap;
+    text-align: left;
+}
+
+.terra{
+margin: 1cm;
+
+}
+
+button {
+    background-color: rgb(5, 66, 19);
+    width: 200px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid rgb(3, 26, 5);
+    color: rgb(235, 222, 180);
+    cursor: pointer;
+    margin: 2cm;
+  }
+
